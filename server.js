@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const apiRoutes = require('./routes/index.js'); // Import the routes
 // Port number
-const PORT = 3001;
+const PORT =  process.env.PORT || 3001;
 // Creates instance of express allowing us to create routes add mmiddleware etc.
 const app = express();
 
